@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Recifind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--SOME APPLE SEETINGS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!--link to other scripts in js folder, i.e locationtracker.js-->
+	<!--SOME APPLE SEETINGS-->
+            <meta name="apple-mobile-web-app-capable" content="yes">
+                <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+                    <!--You need this although you do not need a physical reference as build will inject it in-->
+                    <script type="text/javascript" src="cordova.js"></script>
+                    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+                    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+                    <script type="text/javascript" src="js/exercisetracker.js"></script>
+                    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+                    <link rel="stylesheet" href="css/reciCSS.css" />
+										<script type="text/javascript" src="js/reciJS.js"></script>
+
+
+
+
+</head>
+<body>
+<!-- Start of Home page -->
+<div data-role="page" id="home" data-theme="a">
+
+    <div data-role="header" class="header">
+
+			<h1>Recifind <img class="logo" src="ASSETS/Logo - No Background.png" alt="Logo"></h1>
+
+        <!-- <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+                <li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
+                <li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+								<li><a href="#localStorage" data-transition="none" data-icon="cloud">Local Storage</a></li>
+						</ul>
+        </div> -->
+    </div>
+
+    <div data-role="content">
+        <p id="intro">What are you looking for <em>today?</em></p>
+				<div align="center">
+					<ul class="list">
+        		<li><button id="chicken_button" onclick="buttonClicked(this.id)">Chicken</button></li>
+        		<li><button id="pork_button" onclick="buttonClicked(this.id)">Pork</button></li>
+        		<li><button id="seafood_button" onclick="buttonClicked(this.id)">Seafood</button></li>
+						<li><button id="vegeterian_button" onclick="buttonClicked(this.id)">Vegeterian</button></li>
+        		<li><button id="noodles_button" onclick="buttonClicked(this.id)">Noodles</button></li>
+        		<li><button id="dessert_button" onclick="buttonClicked(this.id)">Dessert</button></li>
+					</ul>
+					<script>randomList()</script>
+				</div>
+    </div>
+
+
+</div>
+<!-- End of Home page -->
+
+<!-- Start of List page -->
+<div data-role="page" id="list" data-theme="a">
+
+    <div data-role="header" class="header" data-position="fixed">
+
+        <h1>Recifind <img class="logo" src="ASSETS/Logo - No Background.png" alt="Logo"></h1>
+
+        <!-- <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+                <li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
+                <li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+								<li><a href="#localStorage" data-transition="none" data-icon="cloud">Local Storage</a></li>
+						</ul>
+        </div> -->
+
+			<div class="scrollmenu">
+				<ul class="list" id="horizontal">
+					<li><button class="small_button" id="chicken_button" data-icon="" onclick="smallButtonClicked(this.id)">Chicken</button></li>
+					<li><button class="small_button" id="pork_button" data-icon="" onclick="smallButtonClicked(this.id)">Pork</button></li>
+					<li><button class="small_button" id="seafood_button" data-icon="" onclick="smallButtonClicked(this.id)">Seafood</button></li>
+					<li><button class="small_button" id="vegeterian_button" data-icon="" onclick="smallButtonClicked(this.id)">Vegeterian</button></li>
+					<li><button class="small_button" id="noodles_button" data-icon="" onclick="smallButtonClicked(this.id)">Noodles</button></li>
+					<li><button class="small_button" id="dessert_button" data-icon="" onclick="smallButtonClicked(this.id)">Dessert</button></li>
+				</ul>
+				<!-- <script>randomHorizontalList()</script> -->
+			</div>
+		</div>
+
+    <div data-role="content">
+			<ul data-role="listview" id="searchResults">
+			  <li><a href="#"><img src="https://spoonacular.com/recipeImages/thai-sweet-potato-veggie-burgers-with-spicy-peanut-sauce-262682.jpg"><h2>Chicken Kiev</h2><p>Succulent chicken breast filled with garlic butter</p></a></li>
+			  <li><a href="#"><img src="assets/Logo.png">Banana Split</a></li>
+			  <li><a href="#"><img src="assets/Logo.png">Prawn Stir Fry</a></li>
+			  <li><a href="#"><img src="assets/Logo.png">Tikka Masala</a></li>
+			  <li><a href="#"><img src="assets/Logo.png">Chorizo Pizza</a></li>
+			  <li><a href="#"><img src="assets/Logo.png">Cheeseburger</a></li>
+				<li><a href="#"><img src="assets/Logo.png">Cheeseburger</a></li>
+			</ul>
+    </div>
+
+
+</div>
+<!-- End of List page -->
+
+<!-- Start of List page -->
+<div data-role="page" id="recipe" data-theme="a">
+
+    <div data-role="header" class="header" data-position="fixed">
+
+        <h1>Recifind <img class="logo" src="ASSETS/Logo - No Background.png" alt="Logo"></h1>
+
+        <!-- <div data-role="navbar">
+            <ul>
+                <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+                <li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
+                <li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+								<li><a href="#localStorage" data-transition="none" data-icon="cloud">Local Storage</a></li>
+						</ul>
+        </div> -->
+
+		</div>
+
+    <div data-role="content">
+			<div id="container">
+			<div id="image"><img src="https://spoonacular.com/recipeImages/honey-soy-baked-chicken-thighs-840513.jpg"></div>
+			<div id="title"><h2 id="titleHeading">Honey Soy Baked Chicken Thighs</h2><p>Ready in:</p></div></div>
+			<div id="content"><ul id="ingredients"></ul><p id="instructions">RECIPE RECIPE</p></div>
+    </div>
+
+
+</div>
+<!-- End of List page -->
+</body>
+</html>

@@ -1,0 +1,254 @@
+h1 {
+    color: #ffffff;
+    font-size: 1.5em !important;
+    text-align: left !important;
+    /*text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;*/
+    text-shadow: none;
+    margin-left: 10px !important;
+    display: inline-block;
+}
+
+#back{
+  margin-left: 1%;
+  margin-top: -0.5%;
+  background-color: #00a65a !important;
+  border-color: #00a65a !important;
+  display: none;
+}
+#intro{
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.scrollmenu {
+    background-color: #f9f9f9;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+button{
+  border-radius: 3em !important;
+  width: 40% !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+.resiBtn{
+  border-radius: 4em !important;
+  width: auto !important;
+  height: 1em !important;
+  color: white !important;
+  text-shadow: none !important;
+  margin: 0.2em !important;
+  padding-left: 2.2em !important;
+  padding-right: 2.2em !important;
+}
+.small_button{
+  width:25% !important;
+  height: 4em !important;
+}
+
+#chicken, #beef, #rice, #thai{
+  /*pink*/
+  background-color: #ff80d5 !important;
+}
+
+#seafood, #french, #dairy, #lucky, #breakfast{
+  /*blue*/
+  background-color: #80dfff;
+}
+
+#vegetarian, #search, #potato, #main{
+  /*green*/
+  background-color: #66ff66;
+}
+
+#pork, #american, #japanese, #appetizer{
+  /*red*/
+  background-color: #ff6666;
+}
+
+#noodles, #chinese, #mexican, #gluten, #pasta{
+  /*yellow*/
+  background-color: #ffdb4d;
+}
+
+#dessert, #loadRecipe{
+  /*purple*/
+  background-color: #d633ff;
+}
+
+#search, #lucky{
+  width: 50% !important;
+}
+
+#submit{
+  display: inline-flex;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+#information{
+  margin-top: 1em;
+}
+
+#loadRecipe{
+  width: 40% !important;
+}
+
+.header{
+  background-color: #f9f9f9 !important;
+  border-style: none !important;
+  margin-top: -1px;
+}
+
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list#horizontal li {
+  display:inline;
+  padding:0.2em;
+}
+
+.logo{
+  width:1em;
+  height:1em;
+}
+
+.ui-listview h2{
+  white-space: initial !important;
+}
+
+.ui-listview img{
+  height: 5em;
+  width: 5em;
+}
+
+#image img{
+  height:7em;
+  width: 7em;
+}
+
+#image{
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+
+#title{
+  max-height: 7em;
+  margin-bottom: -6em;
+  margin-right: 3em;
+}
+
+#title h2{
+  display: inline;
+}
+
+.save{
+
+}
+
+#content p{
+  margin-top: 2em;
+  text-align: left;
+  display: block;
+}
+
+#container{
+  height: 7em;
+  max-height: 7em;
+  text-overflow: ellipsis;
+}
+
+#ingredients{
+  margin-left: -1em;
+}
+
+#instructions{
+  margin-left: -1em;
+}
+
+#loader {
+	position: fixed;
+  top: 7.5em;
+  left: 0em;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+  background: url('../assets/ripple.gif') 50% 1% no-repeat rgb(249,249,249);
+  background-size: 3em;
+}
+
+#nutrition{
+  display: inline;
+}
+
+span{
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border-radius: 1em;
+  background-color: white;
+  color: #00a65a;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#error{
+  text-align: center;
+  font-weight: bold;
+}
+
+#headings{
+  margin: 0;
+  font-weight: bold;
+}
+
+#refine{
+  width:100%;
+  border-radius: 0em;
+}
+
+.ui-collapsible-heading-toggle{
+  width: 100%;
+  margin-left: -3.905px !important;
+  background-color: #f9f9f9 !important;
+  border-style: none;
+}
+
+.ui-collapsible-content{
+  background-color: #f9f9f9 !important;
+  border-style: none !important;
+}
+
+#appTitle{
+  background-color: #00a65a;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}

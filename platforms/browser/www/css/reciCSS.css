@@ -1,0 +1,143 @@
+h1 {
+    color: #ffffff;
+    font-size: 1.5em !important;
+    text-align: left !important;
+    /*text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;*/
+    text-shadow: none;
+    margin-left: 10px !important;
+}
+#intro{
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.scrollmenu {
+    background-color: #f9f9f9;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+button{
+  border-radius: 3em !important;
+  width: 40% !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+.small_button{
+  width:25% !important;
+  height: 4em !important;
+}
+
+#chicken_button{
+  background-color: #ff80d5 !important;
+}
+
+#seafood_button{
+  background-color: #80dfff;
+}
+
+#vegeterian_button{
+  background-color: #66ff66;
+}
+
+#pork_button{
+  background-color: #ff6666;
+}
+
+#noodles_button{
+  background-color: #ffdb4d;
+}
+
+#dessert_button{
+  background-color: #d633ff;
+}
+
+.header{
+  background-color: #00ff00 !important;
+  border-color: #f9f9f9 !important;
+}
+
+.list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list#horizontal li {
+  display:inline;
+  padding:0.2em;
+}
+
+.logo{
+  width:1em;
+  height:1em;
+}
+
+.ui-listview h2{
+  white-space: initial !important;
+}
+
+.ui-listview img{
+  height: 5em;
+  width: 5em;
+}
+
+#image img{
+  height:7em;
+  width: 7em;
+}
+
+#image{
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+
+#title{
+  max-height: 7em;
+}
+
+#title h2{
+  display: inline;
+}
+
+#content p{
+  margin-top: 2em;
+  text-align: left;
+  display: block;
+}
+
+#container{
+  height: 7em;
+  max-height: 7em;
+  text-overflow: ellipsis;
+}
+
+#ingredients{
+  margin-left: -1em;
+}
+
+#instructionList{
+  margin-left: -1em;
+}
